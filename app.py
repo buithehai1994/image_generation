@@ -76,7 +76,7 @@ if st.button("Generate Image"):
         # Generate and display image once the process is complete
         processed_image = process_and_visualize_image(prompt, width, height)
         if processed_image:
-            st.image(processed_image, use_column_width=True)
+            st.image(processed_image, use_container_width=True)
 
     # Display total elapsed time after image is generated
     total_time = time.time() - start_time
